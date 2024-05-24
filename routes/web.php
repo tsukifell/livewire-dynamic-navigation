@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.master');
 });
+
+Route::resource('home', \App\Http\Controllers\HomeController::class);
+Route::resource('about', \App\Http\Controllers\AboutController::class);
