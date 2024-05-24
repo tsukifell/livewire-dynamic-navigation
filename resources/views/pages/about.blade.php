@@ -1,4 +1,4 @@
 @extends('layouts.master')
 @section('content')
-    @livewire('content-section', ['data' => 'This is the about page content'])
+    @livewire('about-content-section', ['about' => $about])
 @endsection
